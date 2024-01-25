@@ -1,0 +1,36 @@
+POST: localhost:9393/v2/add
+
+Request Body:
+{
+    "fname": "John",
+    "lname": "Carry",
+    "city": "Pune"
+}
+
+
+GET:localhost:9393/v2/fetch/1
+GET:localhost:9393/v1/ping
+
+
+Swagger URl
+http://localhost:9393/swagger-ui/index.html
+
+
+
+GET: localhost:9393/v2/fetchByIdUsingRequestParam?id=1
+
+#actuator
+http://localhost:9393/actuator/health
+http://localhost:9393/actuator/info
+
+
+
+#secure endpoint
+GET: http://localhost:9393/v4/secure
+
+We require a username and password for accessing it.
+username: user
+passsword: 1234
+
+Above all things Mentions in application.properties
+
